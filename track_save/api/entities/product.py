@@ -16,7 +16,7 @@ class Product(models.Model):
     name = models.CharField(max_length=255)
     specification = models.TextField()
     image_url = models.TextField()
-    category = models.IntegerField()
+    category = models.IntegerField() # mudar pra ArrayField como no model de User
 
     class Meta:
         app_label = "api"
